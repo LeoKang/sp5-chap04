@@ -53,11 +53,15 @@ public class AppCtx {
 
     @Bean
     public MemberInfoPrinter infoPrinter() {
-//        MemberInfoPrinter infoPrinter = new MemberInfoPrinter();
+        MemberInfoPrinter infoPrinter = new MemberInfoPrinter();
 //        infoPrinter.setMemberDao(memberDao());
 //        infoPrinter.setPrinter(memberPrinter());
 //        return infoPrinter;
-        return new MemberInfoPrinter();
+//        return new MemberInfoPrinter();
+        // 128page
+        infoPrinter.setPrinter(memberPrinter2());
+
+        return infoPrinter;
     }
 
     @Bean
