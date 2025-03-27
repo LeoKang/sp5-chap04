@@ -1,6 +1,7 @@
 package com.example.sp5_chap04.spring;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.lang.Nullable;
 
 import java.time.format.DateTimeFormatter;
 import java.util.Optional;
@@ -21,8 +22,8 @@ public class MemberPrinter {
         }
     }
 
-    @Autowired(required = false)
-    public void setDateTimeFormatter(DateTimeFormatter dateTimeFormatter) {
+    @Autowired
+    public void setDateTimeFormatter(@Nullable DateTimeFormatter dateTimeFormatter) {
         this.dateTimeFormatter = dateTimeFormatter;
     }
 }
