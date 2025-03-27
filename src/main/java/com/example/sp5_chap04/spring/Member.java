@@ -1,5 +1,8 @@
 package com.example.sp5_chap04.spring;
 
+import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.time.LocalDateTime;
 
 public class Member {
@@ -19,6 +22,7 @@ public class Member {
     void setId(Long id) {
         this.id = id;
     }
+
 
     public Long getId() {
         return id;
