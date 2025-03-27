@@ -1,6 +1,6 @@
 package com.example.sp5_chap04.config;
 
-import com.example.sp5_chap03.spring.*;
+import com.example.sp5_chap04.spring.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
