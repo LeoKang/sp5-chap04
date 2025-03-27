@@ -20,9 +20,10 @@ public class AppCtx {
 
     @Bean
     public ChangePasswordService changePwdSvc() {
-        ChangePasswordService pwdSvc = new ChangePasswordService();
+//        ChangePasswordService pwdSvc = new ChangePasswordService();
 //        pwdSvc.setMemberDao(memberDao());
-        return pwdSvc;
+//        return pwdSvc;
+        return new ChangePasswordService();
     }
 
     @Bean
@@ -38,11 +39,11 @@ public class AppCtx {
 
     @Bean
     public MemberInfoPrinter infoPrinter() {
-        MemberInfoPrinter infoPrinter = new MemberInfoPrinter();
+//        MemberInfoPrinter infoPrinter = new MemberInfoPrinter();
 //        infoPrinter.setMemberDao(memberDao());
 //        infoPrinter.setPrinter(memberPrinter());
-
-        return infoPrinter;
+//        return infoPrinter;
+        return new MemberInfoPrinter();
     }
 
     @Bean
