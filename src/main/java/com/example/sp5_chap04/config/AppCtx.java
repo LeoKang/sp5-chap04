@@ -27,9 +27,22 @@ public class AppCtx {
         return new ChangePasswordService();
     }
 
+    /*
+        @Bean
+        public MemberPrinter memberPrinter() {
+            return new MemberPrinter();
+        }
+    */
     @Bean
-    public MemberPrinter memberPrinter() {
+    @Qualifier("printer")
+    public MemberPrinter memberPrinter1() {
         return new MemberPrinter();
+    }
+
+    @Bean
+    @Qualifier("summaryPrinter")
+    public MemberPrinter memberPrinter2() {
+        return new MemberSummaryPrinter();
     }
 
     @Bean
